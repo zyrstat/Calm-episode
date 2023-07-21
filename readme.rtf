@@ -1,0 +1,119 @@
+{\rtf1\ansi\ansicpg936\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 1. Introduction of codes:\
+
+\fs24 \
+\
+Data preprocessing: data_cleaning.R, CWDws.R, data_cleaning_continue(try).R, data_merge_new.R\
+Plots: scatter plots.R, correlation plot.R\
+Selecting episodes: episode_selection_0806.R \
+Plots of episodes: plot_episodes.R\cf2 \expnd0\expndtw0\kerning0
+, \cf0 \kerning1\expnd0\expndtw0 radio-plot.R\cf2 \expnd0\expndtw0\kerning0
+, \cf0 \kerning1\expnd0\expndtw0 PM_pattern.R\cf2 \expnd0\expndtw0\kerning0
+, meteorological change.R\cf0 \kerning1\expnd0\expndtw0 \
+Variable selection: variable selection print.R\
+Adjustment: adjust_ols_final.R\
+Plots and tables of adjusted values: plot_results.R\cf2 \expnd0\expndtw0\kerning0
+,\cf0 \kerning1\expnd0\expndtw0  summarygrowthrate.R
+\fs28 \
+\
+\
+2. The codes should be run in this order:\
+\
+
+\fs24 data_cleaning.R --> CWDws.R --> data_cleaning_continue(try).R --> data_merge_new.R --> \
+scatter plots.R --> correlation plot.R --> \
+episode_selection_0806.R --> plot_episodes.R
+\f1\fs26\fsmilli13333 \cf2 \expnd0\expndtw0\kerning0
+ 
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 -->  radio-plot.R
+\f1\fs26\fsmilli13333 \cf2 \expnd0\expndtw0\kerning0
+ 
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 -->PM_pattern.R
+\f1\fs26\fsmilli13333 \cf2 \expnd0\expndtw0\kerning0
+ 
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 --> \cf2 \expnd0\expndtw0\kerning0
+meteorological change.R\cf0 \kerning1\expnd0\expndtw0  --> \
+variable selection print.R
+\f1\fs26\fsmilli13333 \cf2 \expnd0\expndtw0\kerning0
+ 
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 -->  adjust_ols_final.R
+\f1\fs26\fsmilli13333 \cf2 \expnd0\expndtw0\kerning0
+ 
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 -->  plot_results.R\cf2 \expnd0\expndtw0\kerning0
+ \cf0 \kerning1\expnd0\expndtw0 --> summarygrowthrate.R\
+
+\fs28 \
+\
+3. Main text:
+\fs24 \
+\
+Figure 1: time series of PM2.5 and CNWS CSWS --> plot_episodes.R\
+\
+\pard\pardeftab720\sl300\sa240\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+Table 1: Summary statistics of selected calm episodes \cf0 \kerning1\expnd0\expndtw0  --> plot_episodes.R
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 Table 2: \cf2 \expnd0\expndtw0\kerning0
+Variable ranks by the forward selection method \cf0 \kerning1\expnd0\expndtw0 --> variable selection print.R\cf2 \expnd0\expndtw0\kerning0
+\
+
+\fs28 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs24 \cf2 \expnd0\expndtw0\kerning0
+Table 3: Relative frequencies of variables
+\f1\fs26\fsmilli13333  
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 -->  variable selection print.R
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\
+
+\f0 Figure 4: The adjusted average growth rate 
+\f1\fs26\fsmilli13333  
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 --> plot_results.R\cf2 \expnd0\expndtw0\kerning0
+\
+Figure 5: Seasonal differences
+\f1\fs26\fsmilli13333  
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 --> plot_results.R
+\fs28 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+4. Supporting Information:
+\fs24 \
+\
+Figure S2: PM2.5 v.s. CWS  --> scatter plots.R\
+\
+Figure S3: Spearman\'92s rank correlation coefficients -->    correlation plot.R\
+\
+\pard\pardeftab720\sl360\sa240\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+Figure S4: distribution of t_s-t_\{\\omega\} \cf0 \kerning1\expnd0\expndtw0 -->   plot_episodes.R\cf2 \expnd0\expndtw0\kerning0
+\
+Figure S5: distributions of wind directions and average wind speed \cf0 \kerning1\expnd0\expndtw0 -->    radio-plot.R\
+\cf2 \expnd0\expndtw0\kerning0
+Figure S6-S8 and \cf0 \kerning1\expnd0\expndtw0 Figure 2\cf2 \expnd0\expndtw0\kerning0
+: average meteorological variables \cf0 \kerning1\expnd0\expndtw0 -->   \cf2 \expnd0\expndtw0\kerning0
+meteorological change.R\cf0 \kerning1\expnd0\expndtw0 \
+\cf2 \expnd0\expndtw0\kerning0
+Figure S9: box plots of pollutants in the first six hours \cf0 \kerning1\expnd0\expndtw0 -->  PM_pattern.R
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\
+
+\f0 Figure S10-S12: estimates for coefficients \cf0 \kerning1\expnd0\expndtw0 --> plot_results.R\
+\cf2 \expnd0\expndtw0\kerning0
+Figure S13-S23 and \cf0 \kerning1\expnd0\expndtw0 Figure 1\cf2 \expnd0\expndtw0\kerning0
+: adjusted and original growth rates  \cf0 \kerning1\expnd0\expndtw0 --> plot_results.R\
+Table S2: \cf2 \expnd0\expndtw0\kerning0
+Seasonal and annual adjusted average growth rates   \cf0 \kerning1\expnd0\expndtw0 --> summarygrowthrate.R\cf2 \expnd0\expndtw0\kerning0
+\
+\cf0 \kerning1\expnd0\expndtw0 Table S3: \cf2 \expnd0\expndtw0\kerning0
+Signifcant reduction in adjusted average growth rates   \cf0 \kerning1\expnd0\expndtw0 --> summarygrowthrate.R\
+}
