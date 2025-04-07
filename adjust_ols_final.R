@@ -8,7 +8,7 @@
 # ggmap(getBaiduMap(location = c(lon=116.38145,lat=39.93303),zoom = 9))+
 #   geom_point(data = lon_lats[lon_lats$province=='Beijing',],aes(x = lon, y =lat,color=factor(color)),size = 2)
 
-ggmap::register_google(key = "AIzaSyDqQgt85Q6rDDdlYjQj0teyfVd3Zm6KG_Y")
+ggmap::register_google(key = "xxxxxxxxxx")
 devtools::install_github("fresques/ggmap")
 # check if key is saved
 has_goog_key()
