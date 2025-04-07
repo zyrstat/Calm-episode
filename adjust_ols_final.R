@@ -3,7 +3,7 @@
 # remotes::install_github("badbye/baidumap")
 # library(baidumap)
 # library(ggmap)
-# options(baidumap.key = 'X8acHNtnlKfIcHS9QagCkAuOGBGVlASv')
+# options(baidumap.key = 'xxxxxxxxxx')
 # lon_lats$color=rep(c(2,1,3,4),each=3)
 # ggmap(getBaiduMap(location = c(lon=116.38145,lat=39.93303),zoom = 9))+
 #   geom_point(data = lon_lats[lon_lats$province=='Beijing',],aes(x = lon, y =lat,color=factor(color)),size = 2)
